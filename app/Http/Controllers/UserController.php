@@ -30,15 +30,15 @@
             return view('auth.register');
         }
 
-//        public function store(Request $request) ///Rota do jetstream está sobrescrevendo
-//        {
-//            dd($request->all());
-//            $user = $request->all();
-//            User::create($user);
-//            return redirect('/dashboard')->with(
-//                'msg', 'Usuário criado com sucesso!'
-//            );
-//        }
+        //        public function store(Request $request) ///Rota do jetstream está sobrescrevendo
+        //        {
+        //            dd($request->all());
+        //            $user = $request->all();
+        //            User::create($user);
+        //            return redirect('/dashboard')->with(
+        //                'msg', 'Usuário criado com sucesso!'
+        //            );
+        //        }
 
         public function show($id)
         {
