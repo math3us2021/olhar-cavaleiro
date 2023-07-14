@@ -1,0 +1,221 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.msg{
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.row {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #f2a340;
+    border-color: #c28008;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #f2a340;
+}
+
+#navbar img {
+    width: 40px;
+}
+
+#navbar .navbar-brand {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a:hover {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #f2a340;
+}
+
+#search-container {
+    background-image: url("../img/eyeHorse.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h2 {
+    color: #f2a340;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#event-container {
+    padding: 50px;
+}
+
+#event-container h2 {
+    margin-bottom: 10px;
+}
+
+#event-container .subtitle {
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#cards-container .card {
+    /*flex: 1 1 0;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#event-container img {
+    max-width: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #757575;
+}
+
+.card .card-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants {
+    font-size: 14px;
+    color: #757575;
+}
+
+#event-create-container {
+    padding: 30px;
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 12px;
+}
+
+#image-container,
+#info-container {
+   margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+#info-container h1 {
+    font-size:36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#items-list {
+    list-style: none;
+    padding: 0;
+}
+
+#items-list li {
+    display: flex;
+}
+
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top:  30px;
+}
+.dashTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-events-container th{
+    width: 25%;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
