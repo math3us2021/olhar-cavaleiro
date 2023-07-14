@@ -2,7 +2,6 @@
 
     namespace App\Http\Controllers;
 
-    use App\Http\Requests\StoreEventRequest;
     use App\Models\Event;
     use App\Models\User;
     use Illuminate\Http\Request;
@@ -31,7 +30,7 @@
             return view('auth.register');
         }
 
-//        public function store(Request $request)
+//        public function store(Request $request) ///Rota do jetstream está sobrescrevendo
 //        {
 //            dd($request->all());
 //            $user = $request->all();
@@ -54,7 +53,6 @@
 
         public function destroy($id)
         {
-//            dd($id);
             Event::where('user_id', $id)->delete();
             User::findOrFail($id)->delete();
             return redirect('/dashboard')->with(
@@ -64,19 +62,14 @@
 
         public function edit($id)
         {
-//            dd($id);
             $user = User::findOrFail($id);
             return view('users.edit-user', ['user' => $user]);
         }
 
         public function update(Request $request, User $user)
         {
-//            dd($request->all());
-//            dd($user);
             $data = $request->except('cpf', 'email', 'password');
-//            dd($data);
             $user->update($data);
-//            dd($res);
 
             return redirect('/dashboard')->with(
                 'msg', 'Evento editado com sucesso!'

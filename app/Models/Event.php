@@ -7,15 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    protected $casts = [ //Para transformar o array em string
+    protected $casts = [
         'items' => 'array'
     ];
-    protected $dates = ['date']; //Para transformar o campo em data
+    protected $dates = ['date'];
 
-    protected $guarded = []; //Para não alterar nada
-    protected $table = 'events';
-    protected $fillable = ['title','city','private','description','items','date']; //Pode ou não alterar
-//    public $timestamps = false;  //Para não usar o created_at e updated_at
+    protected $guarded = [];
+    protected $fillable = ['title','city','private','description','items','date'];
     public function user()
     {
         return $this->belongsTo('App\Models\User');
